@@ -21,7 +21,7 @@ $(function() {
         e.preventDefault()
         $.ajax({
             mothod: 'POST',
-            url: 'http://www.liulongbin.top:3007/my/updatepwd',
+            url: 'http://big-event-api-t.itheima.net/my/updatepwd',
             headers: {
                 Authorization: localStorage.getItem('token') || ''
             },

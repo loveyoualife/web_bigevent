@@ -15,7 +15,7 @@ $(function() {
     function userinfo() {
         $.ajax({
             method: 'GET',
-            url: 'http://www.liulongbin.top:3007/my/userinfo',
+            url: 'http://big-event-api-t.itheima.net/my/userinfo',
             headers: {
                 Authorization: localStorage.getItem('token') || ''
             },
@@ -44,7 +44,7 @@ $(function() {
         // 发起 ajax 数据请求
         $.ajax({
             mothod: 'POST',
-            url: 'http://ajax.frontend.itheima.net/my/userinfo',
+            url: 'http://big-event-api-t.itheima.net/my/userinfo',
             headers: {
                 Authorization: localStorage.getItem('token') || ''
             },

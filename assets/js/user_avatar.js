@@ -56,7 +56,7 @@ $(function() {
         // 2. 调用接口，把头像上传到服务器
         $.ajax({
             method: 'POST',
-            url: 'http://www.liulongbin.top:3007/my/update/avatar',
+            url: 'http://big-event-api-t.itheima.net/my/update/avatar',
             headers: {
                 Authorization: localStorage.getItem('token') || ''
             },

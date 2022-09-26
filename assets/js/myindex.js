@@ -26,7 +26,7 @@ $(function() {
 function getUserInfo() {
     $.ajax({
         method: 'GET',
-        url: 'http://www.liulongbin.top:3007/my/userinfo',
+        url: 'http://big-event-api-t.itheima.net/my/userinfo',
         // headers 就是请求头配置对象
         headers: {
             Authorization: localStorage.getItem('token') || ''
@@ -50,7 +50,7 @@ function getUserInfo() {
                 // 1. 强制清除本地存储中的 token
                 localStorage.removeItem('token')
                 // 2. 强制跳转到登录页面
-                location.href = './login.html'
+                location.href = '../login.html'
             }
         }
     })
